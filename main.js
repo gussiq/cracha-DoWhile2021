@@ -1,6 +1,6 @@
 const LinksSocialMedia = {
   github: 'gussiq',
-  youtube: 'maykbrito',
+  youtube: 'channel/UCt9pPFLFUYB35E1aikKzVHA',
   facebook: 'gustavo.siqueira.752',
   instagram: 'gusiqueiiraa',
   twitter: 'sicgusta'
