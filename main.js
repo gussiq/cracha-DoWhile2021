@@ -1,6 +1,6 @@
 const LinksSocialMedia = {
   github: 'gussiq',
-  youtube: 'channel/UCt9pPFLFUYB35E1aikKzVHA',
+  linkedin: 'in/gussiq1',
   facebook: 'gustavo.siqueira.752',
   instagram: 'gusiqueiiraa',
   twitter: 'sicgusta'
@@ -10,7 +10,7 @@ function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
 
-    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+    li.children[0].href = `https://www.${social}.com/${LinksSocialMedia[social]}`
   }
 }
 
