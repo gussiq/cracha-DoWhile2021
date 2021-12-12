@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -15,13 +17,24 @@ body {
 body {
   display: grid;
   place-items: center;
+  background-color: var(--black);
+  background-image: url(images/background-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main {
-  background: url(images/background.svg) no-repeat center/cover;
-  width: 100vw;
-  min-height: 812px;
-  height: 100vh;
+  background: url(images/background.svg);
+  width: 375px;
+  height: 790px;
+  border-radius: 5px;
+
+  /* -webkit-backdrop-filter: blur(10px); */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 15px 30px 5px rgb(0 0 0 / 70%);
+  transform-style: preserve-3d;
+  transform: translateZ(0);
 }
 
 .container {
@@ -92,42 +105,64 @@ ul {
 
   justify-content: center;
 }
+.do-while {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  background: rgb(0 0 0 / 52%);
+  width: 300px;
+  padding: 0.6rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
 
 /* Media Query*/
 @media (min-width: 820px) {
   main {
-    background: url(images/Desktop.svg) no-repeat;
-    background-color: rgba(0, 0, 0, 0.918);
-    background-position: top center;
-  }
-
-  .container {
-    max-width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-    color: var(--grey);
+    width: 360px;
+    height: 560px;
+    background: url(images/badge.svg);
+    background-size: 360px 560px;
   }
 
   .avatar {
-    width: 10rem;
-    margin: 11.5rem auto 0;
-
-    position: relative;
-  }
-
-  .avatar span {
-    margin-top: 0.7rem;
-  }
-
-  .avatar > img {
-    height: 13.25rem;
-    margin-top: 0.5rem;
+    margin: 4.9rem auto 0;
   }
 
   ul {
-    margin-top: 2.5rem;
+    margin: 2rem auto 0;
+  }
+
+  .range {
+    position: absolute;
+    z-index: 2;
+    width: 66px;
+    height: 750px;
+    background: linear-gradient(161.24deg, #ff008e -15.25%, #ffcd1e 111.89%);
+    top: 0;
+    margin-top: -45rem;
+    margin-left: 9.2rem;
+  }
+
+  .hole {
+    position: absolute;
+    background: #121214;
+    z-index: 1;
+    width: 84px;
+    height: 12px;
+    margin-left: 8.7rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .do-while {
+    position: static;
+    margin: 5rem auto 0;
+    margin-left: 15px;
+    background: none;
+    box-shadow: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 350px;
   }
 }
 
