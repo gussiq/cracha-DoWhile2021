@@ -2,7 +2,7 @@ const LinksSocialMedia = {
   github: 'gussiq',
   linkedin: 'in/gussiq1',
   facebook: 'gustavo.siqueira.752',
-  instagram: 'gusiqueiiraa',
+  instagram: 'gussiq1',
   twitter: 'sicgusta'
 }
 
